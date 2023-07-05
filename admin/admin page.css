@@ -1,0 +1,114 @@
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+
+}
+header img{
+  width: 80px;
+
+}
+
+.buttons button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.buttons button i {
+  margin-right: 5px;
+}
+
+.form-container {
+
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+ 
+}
+#courseForm,#studentForm{
+  display: none;
+
+}
+.form-container h2 {
+  margin-top: 0;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #45a049;
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+
+
+}
+li{
+  width: 1000px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  padding: 10px;
+  height: 100px;
+  justify-content: space-between;
+
+
+}
+li img{
+  width: 100px;
+
+}

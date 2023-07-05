@@ -1,0 +1,17 @@
+Fonction selectionnerChauffeurs(P, C, contraintesHoraires) :
+    chauffeursSelectionnes = ListeVide()
+
+    Pour chaque chauffeur dans C :
+        Si chauffeur.estDisponible(contraintesHoraires) ET chauffeur.peutGererProduits(P) ET chauffeur.peutAtteindreDestination(P) :
+            scoreCompatibilite = calculerScoreCompatibilite(chauffeur)
+            chauffeursSelectionnes.ajouter(chauffeur, scoreCompatibilite)
+
+    chauffeursSelectionnes.trierParScoreCompatibilite(decroissant)
+
+    Pour chaque chauffeur dans chauffeursSelectionnes :
+        Si chauffeur.peutLivrerTousLesProduits(P) :
+            retourner chauffeursSelectionnes
+        
+    retourner une liste vide si aucun chauffeur ne peut livrer tous les produits
+
+Fin Fonction
